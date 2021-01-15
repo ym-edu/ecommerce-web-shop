@@ -12,10 +12,18 @@ const Product = ({ product }) => {
               {product.name}
             </Typography>
             <Typography variant="h5"> {/* Material UI text */}
-              {product.description}
+              {product.price}
             </Typography>
           </div>
+          <Typography variant="h2" color="textSecondary">
+            {product.description}
+          </Typography>
         </CardContent>
+        <CardActions disableSpacing>
+          <IconButton aria-label="Add to Cart">
+            <AddShoppingCart />
+          </IconButton>
+        </CardActions>
       </Card>
   )
 }
