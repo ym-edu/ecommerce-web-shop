@@ -9,7 +9,7 @@ export default function Products() {
   const classes = useStyles();
   return (
     <main className={classes.content}>
-      <div className={classes.content} />
+      <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}> {/* material UI grid */}
           {products.map(product => {
             return (
