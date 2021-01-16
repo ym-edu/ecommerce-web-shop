@@ -3,10 +3,13 @@ import { Grid } from '@material-ui/core'
 
 import { products } from '../constants/products'
 import Product from './Product'
+import useStyles from '../styles/products-styles'
 
 export default function Products() {
+  const classes = useStyles();
   return (
-    <main>
+    <main className={classes.content}>
+      <div className={classes.toolbar} />
       <Grid container justify="center" spacing={4}> {/* material UI grid */}
           {products.map(product => {
             return (
