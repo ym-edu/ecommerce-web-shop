@@ -9,8 +9,8 @@ const Product = ({ product }) => {
 
   return (
       <Card  className={classes.root}>
-        <CardMedia image='' title={product.name} />
-        <CardContent>
+        <CardMedia className={classes.media} image='' title={product.name} />
+        <CardContent className={classes.cardContent}>
           <div>
             <Typography variant="h5" gutterBottom> {/* Material UI text */}
               {product.name}
@@ -19,11 +19,11 @@ const Product = ({ product }) => {
               {product.price}
             </Typography>
           </div>
-          <Typography variant="h2" color="textSecondary">
+          <Typography variant="h6" color="textSecondary">
             {product.description}
           </Typography>
         </CardContent>
-        <CardActions disableSpacing>
+        <CardActions className={classes.cardActions} disableSpacing>
           <IconButton aria-label="Add to Cart">
             <AddShoppingCart />
           </IconButton>
