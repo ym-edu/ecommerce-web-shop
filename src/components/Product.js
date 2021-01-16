@@ -9,7 +9,7 @@ const Product = ({ product }) => {
 
   return (
       <Card  className={classes.root}>
-        <CardMedia className={classes.media} image='' title={product.name} />
+        <CardMedia className={classes.media} image={product.image} title={product.name} />
         <CardContent className={classes.cardContent}>
           <div>
             <Typography variant="h5" gutterBottom> {/* Material UI text */}
@@ -19,7 +19,7 @@ const Product = ({ product }) => {
               {product.price}
             </Typography>
           </div>
-          <Typography variant="h6" color="textSecondary">
+          <Typography variant="body2" color="textSecondary">
             {product.description}
           </Typography>
         </CardContent>
