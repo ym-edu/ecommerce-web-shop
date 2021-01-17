@@ -1,11 +1,11 @@
 import React from 'react'
 import { Grid } from '@material-ui/core'
 
-import { products } from '../constants/products'
+// import { products } from '../constants/products'
 import Product from './Product'
 import useStyles from '../styles/products-styles'
 
-export default function Products() {
+export default function Products({ products }) {
   const classes = useStyles();
   return (
     <main className={classes.content}>
